@@ -1,0 +1,111 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Duas colunas */
+    grid-template-areas:
+        "header header"
+        "main contact"
+        "experience tech"
+        "education education";
+    gap: 20px;
+}
+
+/* Cabeçalho */
+header {
+    grid-area: header;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px 0px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #444;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Seções */
+section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Organização das áreas no grid */
+main {
+    grid-area: main;
+}
+
+#experience {
+    grid-area: experience;
+}
+
+#work {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+#tech {
+    grid-area: tech;
+}
+
+#education {
+    grid-area: education;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Listas */
+ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+li + li {
+    margin-bottom: 1.5rem;
+}
+
+/* Contato e Tecnologias */
+#contact p,
+#tech p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+/* Melhorando a legibilidade */
+h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
