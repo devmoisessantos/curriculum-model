@@ -24,7 +24,7 @@ Este repositório contém um modelo de currículo simples e moderno, desenvolvid
 
 ## 🌎 Visualização Online
 
-O currículo pode ser visualizado online através deste 🔗 [Link](http://curriculum-model.vercel.app).
+O currículo pode ser visualizado online através deste 🔗 [Link](https://curriculum-model-steel.vercel.app/).
 
 ---
 
